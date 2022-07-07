@@ -1,0 +1,10 @@
+CKAD Notes
+
+Create pod: kubectl run --generator=run-pod/v1 NAME --image=x --dry-run=client -o yaml > pod.yaml
+
+Configmap: kubectl create configmap NAME --from-literal=DATA
+
+
+Create Deployment: 			kubectl create deployment NAME --image=X --dry-run=client -o yaml > dep.yaml
+Update deployment image: 	kubectl set image deployment/NAME IMAGE
+Rollback deployment: 		kubectl rollout undo deployment NAME
