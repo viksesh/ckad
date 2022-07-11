@@ -8,3 +8,5 @@ Configmap: kubectl create configmap NAME --from-literal=DATA
 Create Deployment: 			kubectl create deployment NAME --image=X --dry-run=client -o yaml > dep.yaml
 Update deployment image: 	kubectl set image deployment/NAME IMAGE
 Rollback deployment: 		kubectl rollout undo deployment NAME
+
+Explain pod yaml:              kubectl explain pods --recusrive | less
